@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>PerfilAdd</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      Cadastro
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item>
+        <ion-input placeholder="Nome" [(ngModel)]="cliente.cliente"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="data" [(ngModel)]="cliente.data"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="Quantidade" [(ngModel)]="cliente.qtd"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="Valor unitário" [(ngModel)]="cliente.vlr_unitario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="Valor Total" [(ngModel)]="cliente.vlr_total"></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" (click)="add()">Ok</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
